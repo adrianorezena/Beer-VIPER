@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Naa-5e-pcl">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beer Details View Controller-->
+        <scene sceneID="TuZ-vQ-WV4">
+            <objects>
+                <viewController id="Naa-5e-pcl" customClass="BeerDetailsViewController" customModule="Beer_VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7uT-mE-S94">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="0nL-uv-Y1y">
+                                <rect key="frame" x="0.0" y="64" width="80" height="97.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0nL-uv-Y1y" secondAttribute="height" multiplier="408:496" id="g2b-Rw-PHe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skol Beats" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaU-JC-Vua">
+                                <rect key="frame" x="100" y="86" width="200" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vanilla Bean Infused Belgian Quad." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjC-V8-0ka">
+                                <rect key="frame" x="100" y="120" width="200" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="rVd-kb-gsy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVQ-JB-wRx">
+                                <rect key="frame" x="15" y="181.5" width="290" height="62.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="KsL-7I-R9X"/>
+                                </constraints>
+                                <string key="text">Our flagship that kick started the craft beer revolution. This is James and Martin's original take on an American IPA, sibverted with punchy New Zealand hops.</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FjC-V8-0ka" firstAttribute="top" secondItem="QaU-JC-Vua" secondAttribute="bottom" constant="10" id="27v-LH-ECq"/>
+                            <constraint firstItem="KN4-C5-rxC" firstAttribute="trailing" secondItem="QaU-JC-Vua" secondAttribute="trailing" constant="20" id="3FB-IB-KnE"/>
+                            <constraint firstItem="FjC-V8-0ka" firstAttribute="leading" secondItem="0nL-uv-Y1y" secondAttribute="trailing" constant="20" id="98n-hH-WKy"/>
+                            <constraint firstItem="QaU-JC-Vua" firstAttribute="leading" secondItem="0nL-uv-Y1y" secondAttribute="trailing" constant="20" id="9p5-Nb-wBR"/>
+                            <constraint firstItem="KN4-C5-rxC" firstAttribute="trailing" secondItem="FjC-V8-0ka" secondAttribute="trailing" constant="20" id="CXC-A4-z4Y"/>
+                            <constraint firstItem="KN4-C5-rxC" firstAttribute="trailing" secondItem="yVQ-JB-wRx" secondAttribute="trailing" constant="15" id="POI-eE-03e"/>
+                            <constraint firstItem="0nL-uv-Y1y" firstAttribute="leading" secondItem="KN4-C5-rxC" secondAttribute="leading" id="PQo-LX-iRD"/>
+                            <constraint firstItem="yVQ-JB-wRx" firstAttribute="leading" secondItem="KN4-C5-rxC" secondAttribute="leading" constant="15" id="Vem-wx-OEK"/>
+                            <constraint firstItem="0nL-uv-Y1y" firstAttribute="top" secondItem="KN4-C5-rxC" secondAttribute="top" id="oCN-mh-O9C"/>
+                            <constraint firstItem="yVQ-JB-wRx" firstAttribute="top" secondItem="0nL-uv-Y1y" secondAttribute="bottom" constant="20" id="oSz-2b-dnG"/>
+                            <constraint firstItem="QaU-JC-Vua" firstAttribute="centerY" secondItem="0nL-uv-Y1y" secondAttribute="centerY" constant="-15" id="ycc-5a-ZbH"/>
+                            <constraint firstItem="0nL-uv-Y1y" firstAttribute="width" secondItem="7uT-mE-S94" secondAttribute="width" multiplier="1:4" id="yud-Od-nbn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KN4-C5-rxC"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elH-t5-kop" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509.60000000000002" y="-145.27736131934034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="408" height="496"/>
+    </resources>
+</document>

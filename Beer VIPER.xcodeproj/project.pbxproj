@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B9D0F56B20CEC44D00056489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0F56A20CEC44D00056489 /* AppDelegate.swift */; };
-		B9D0F56D20CEC44D00056489 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0F56C20CEC44D00056489 /* BeerListViewController.swift */; };
-		B9D0F57020CEC44D00056489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D0F56E20CEC44D00056489 /* Main.storyboard */; };
+		B9D0F56D20CEC44D00056489 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0F56C20CEC44D00056489 /* BeerListTableViewController.swift */; };
+		B9D0F57020CEC44D00056489 /* BeerList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D0F56E20CEC44D00056489 /* BeerList.storyboard */; };
 		B9D0F57220CEC45000056489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D0F57120CEC45000056489 /* Assets.xcassets */; };
 		B9D0F57520CEC45000056489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D0F57320CEC45000056489 /* LaunchScreen.storyboard */; };
 		B9D0F58020CEC45000056489 /* Beer_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0F57F20CEC45000056489 /* Beer_VIPERTests.swift */; };
 		B9D0F58B20CEC45000056489 /* Beer_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0F58A20CEC45000056489 /* Beer_VIPERUITests.swift */; };
-		B9D0F6B320CF06E900056489 /* FavoriteBeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0F6B220CF06E900056489 /* FavoriteBeersViewController.swift */; };
+		B9D0F6B320CF06E900056489 /* FavoriteBeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0F6B220CF06E900056489 /* FavoriteBeersTableViewController.swift */; };
 		B9D0F6B520CF082800056489 /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D0F6B420CF082800056489 /* BeerDetailsViewController.swift */; };
+		B9D0F6CB20CF102A00056489 /* FavoriteBeers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D0F6CA20CF102A00056489 /* FavoriteBeers.storyboard */; };
+		B9D0F6CD20CF104900056489 /* BeerDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D0F6CC20CF104900056489 /* BeerDetails.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,8 @@
 /* Begin PBXFileReference section */
 		B9D0F56720CEC44D00056489 /* Beer VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D0F56A20CEC44D00056489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9D0F56C20CEC44D00056489 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
-		B9D0F56F20CEC44D00056489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9D0F56C20CEC44D00056489 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
+		B9D0F56F20CEC44D00056489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BeerList.storyboard; sourceTree = "<group>"; };
 		B9D0F57120CEC45000056489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9D0F57420CEC45000056489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9D0F57620CEC45000056489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +51,10 @@
 		B9D0F58620CEC45000056489 /* Beer VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beer VIPERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D0F58A20CEC45000056489 /* Beer_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer_VIPERUITests.swift; sourceTree = "<group>"; };
 		B9D0F58C20CEC45000056489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9D0F6B220CF06E900056489 /* FavoriteBeersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBeersViewController.swift; sourceTree = "<group>"; };
+		B9D0F6B220CF06E900056489 /* FavoriteBeersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBeersTableViewController.swift; sourceTree = "<group>"; };
 		B9D0F6B420CF082800056489 /* BeerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewController.swift; sourceTree = "<group>"; };
+		B9D0F6CA20CF102A00056489 /* FavoriteBeers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteBeers.storyboard; sourceTree = "<group>"; };
+		B9D0F6CC20CF104900056489 /* BeerDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeerDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,8 +211,8 @@
 		B9D0F6BD20CF0D1000056489 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				B9D0F56E20CEC44D00056489 /* Main.storyboard */,
-				B9D0F56C20CEC44D00056489 /* BeerListViewController.swift */,
+				B9D0F56E20CEC44D00056489 /* BeerList.storyboard */,
+				B9D0F56C20CEC44D00056489 /* BeerListTableViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -251,7 +255,8 @@
 		B9D0F6C320CF0DA200056489 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				B9D0F6B220CF06E900056489 /* FavoriteBeersViewController.swift */,
+				B9D0F6B220CF06E900056489 /* FavoriteBeersTableViewController.swift */,
+				B9D0F6CA20CF102A00056489 /* FavoriteBeers.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				B9D0F6B420CF082800056489 /* BeerDetailsViewController.swift */,
+				B9D0F6CC20CF104900056489 /* BeerDetails.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -403,9 +409,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D0F6CB20CF102A00056489 /* FavoriteBeers.storyboard in Resources */,
 				B9D0F57520CEC45000056489 /* LaunchScreen.storyboard in Resources */,
 				B9D0F57220CEC45000056489 /* Assets.xcassets in Resources */,
-				B9D0F57020CEC44D00056489 /* Main.storyboard in Resources */,
+				B9D0F57020CEC44D00056489 /* BeerList.storyboard in Resources */,
+				B9D0F6CD20CF104900056489 /* BeerDetails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,9 +438,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D0F56D20CEC44D00056489 /* BeerListViewController.swift in Sources */,
+				B9D0F56D20CEC44D00056489 /* BeerListTableViewController.swift in Sources */,
 				B9D0F6B520CF082800056489 /* BeerDetailsViewController.swift in Sources */,
-				B9D0F6B320CF06E900056489 /* FavoriteBeersViewController.swift in Sources */,
+				B9D0F6B320CF06E900056489 /* FavoriteBeersTableViewController.swift in Sources */,
 				B9D0F56B20CEC44D00056489 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,12 +477,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B9D0F56E20CEC44D00056489 /* Main.storyboard */ = {
+		B9D0F56E20CEC44D00056489 /* BeerList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B9D0F56F20CEC44D00056489 /* Base */,
 			);
-			name = Main.storyboard;
+			name = BeerList.storyboard;
 			sourceTree = "<group>";
 		};
 		B9D0F57320CEC45000056489 /* LaunchScreen.storyboard */ = {

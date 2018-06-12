@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoriteBeersViewController: UIViewController {
+class FavoriteBeersTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
