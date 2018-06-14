@@ -12,19 +12,40 @@
         <!--Beer List-->
         <scene sceneID="1xB-lp-RBA">
             <objects>
-                <tableViewController id="TgR-bu-fic" customClass="BeerListTableViewController" customModule="Beer_VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="BeerListTableViewController" id="TgR-bu-fic" customClass="BeerListTableViewController" customModule="Beer_VIPER" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pt9-kZ-vPu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="tLi-ND-7Yg">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="NbV-8I-Uae" detailTextLabel="lPM-VK-cjI" imageView="4rO-7R-Ay6" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="tLi-ND-7Yg">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tLi-ND-7Yg" id="DVp-4Y-LLW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NbV-8I-Uae">
+                                            <rect key="frame" x="96" y="20" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lPM-VK-cjI">
+                                            <rect key="frame" x="96" y="43.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="placeholder" id="4rO-7R-Ay6">
+                                            <rect key="frame" x="16" y="0.0" width="65" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -32,7 +53,11 @@
                             <outlet property="delegate" destination="TgR-bu-fic" id="ZiZ-Mn-2lw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Beer List" id="kFj-bJ-3Kb"/>
+                    <navigationItem key="navigationItem" title="Beer List" id="kFj-bJ-3Kb">
+                        <barButtonItem key="rightBarButtonItem" title="Favorites" id="gkf-Zb-L4h">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <navigationItem title="Beer List" id="gAx-hf-g8Z"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMT-dm-snj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -42,11 +67,12 @@
         <!--Navigation Controller-->
         <scene sceneID="XLt-cR-Wb5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F0U-O6-8Xb" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BeerListNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="F0U-O6-8Xb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3Z4-6N-T0A">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,4 +91,7 @@
             <point key="canvasLocation" x="404" y="1109"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="408" height="496"/>
+    </resources>
 </document>
