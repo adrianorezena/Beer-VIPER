@@ -13,7 +13,13 @@ class FavoriteBeersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initUIElements()
     }
+    
+    func initUIElements() {
+        //tableView.register(BeerTableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UINib(nibName: "BeerTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")        
+    }
+    
 
 }

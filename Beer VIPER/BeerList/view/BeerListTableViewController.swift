@@ -43,7 +43,6 @@ class BeerListTableViewController: UITableViewController {
     
 
     func initUIElements() {
-        //tableView.register(BeerTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.register(UINib(nibName: "BeerTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
         searchBar.delegate = self
@@ -116,6 +115,33 @@ class BeerListTableViewController: UITableViewController {
     }
     
     
+    
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        // Hide
+        let action = UITableViewRowAction(style: .default, title: "Add to favorites") { (action, index) in
+            print("add favorite")
+        }
+        
+        action.backgroundColor = .mainBlue
+        
+//        // Delete
+//        let deleteNotification = UITableViewRowAction(style: .default, title: "Excluir notificação") { (action, index) in
+//            print("Excluir notificação")
+//        }
+//
+//        deleteNotification.backgroundColor = .red
+        
+        return [action]
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     //MARK: - Search content
     func searchBarIsEmpty() -> Bool {
         return searchBar.text?.isEmpty ?? true
@@ -168,8 +194,8 @@ extension BeerListTableViewController: BeerListPresenterToViewProtocol {
         }
     }
     
-    func showError() {
-        let alert = UIAlertController(title: "Alert", message: "Error when fetching beers", preferredStyle: .alert)
+    func showError(message: String) {
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)        
     }

@@ -14,8 +14,6 @@ class BeerListPresenter: BeerListViewToPresenterProtocol {
     weak var view: BeerListPresenterToViewProtocol?
     var interactor: BeerListPresenterToInteractorProtocol?
     var router: BeerListPresenterToRouterProtocol?
-    //var beers: [BeerModel]!
-    //var beers: [BeerModel] = []
     
     func updateView() {
         interactor?.fetchBeers(nil)
@@ -36,7 +34,6 @@ class BeerListPresenter: BeerListViewToPresenterProtocol {
         }
         
         view?.showBeers(beers: filteredBeers)
-        //view.configureWithItems(items: buildItems(cities!))
     }
     
     func showFavorites(from view: BeerListPresenterToViewProtocol) {
@@ -51,8 +48,8 @@ extension BeerListPresenter: BeerListInteractorToPresenterProtocol {
         view?.showBeers(beers: beers)
     }
     
-    func beersFetchedFailed() {
-        view?.showError()
+    func beersFetchedFailed(message: String) {
+        view?.showError(message: message)
     }
     
 }

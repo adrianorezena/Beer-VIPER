@@ -24,23 +24,26 @@ class BeerListInteractor: BeerListPresenterToInteractorProtocol {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if error != nil {
                 print(error!.localizedDescription)
-                self.presenter?.beersFetchedFailed()
+                self.presenter?.beersFetchedFailed(message: error!.localizedDescription)
             }
             
             guard let data = data else { return }
+            
+            print(String(data: data, encoding: String.Encoding.utf8) as String?)
             
             do {
                 let beerData = try JSONDecoder().decode([BeerModel].self, from: data)
                 self.presenter?.beersFetched(beers: beerData)
             } catch {
-                self.presenter?.beersFetchedFailed()
+                if let errorModel = try? JSONDecoder().decode(ErrorModel.self, from: data) {
+                    self.presenter?.beersFetchedFailed(message: errorModel.message)
+                } else {
+                    self.presenter?.beersFetchedFailed(message: "Error when fetching beers")
+                }
             }
             
             }.resume()
     }
-    
-    
-    
     
     func filterBeers(_ searchString: String, _ beers: [BeerModel]) -> [BeerModel] {
         return beers.filter({ (beer: BeerModel) -> Bool in

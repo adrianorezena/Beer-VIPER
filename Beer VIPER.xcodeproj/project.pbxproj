@@ -34,6 +34,8 @@
 		B9E7A74D20D3CBE200CEFEB5 /* EmptySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E7A74C20D3CBE200CEFEB5 /* EmptySearchView.swift */; };
 		B9E7A75220D59BD500CEFEB5 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9E7A75120D59BD500CEFEB5 /* BeerTableViewCell.xib */; };
 		B9E7A75420D59BFE00CEFEB5 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E7A75320D59BFE00CEFEB5 /* BeerTableViewCell.swift */; };
+		B9E7A75620D5A94A00CEFEB5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E7A75520D5A94A00CEFEB5 /* Constants.swift */; };
+		B9E7A75820D5AB9A00CEFEB5 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E7A75720D5AB9A00CEFEB5 /* ErrorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		B9E7A74C20D3CBE200CEFEB5 /* EmptySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchView.swift; sourceTree = "<group>"; };
 		B9E7A75120D59BD500CEFEB5 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
 		B9E7A75320D59BFE00CEFEB5 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		B9E7A75520D5A94A00CEFEB5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B9E7A75720D5AB9A00CEFEB5 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		DC0BC3F98EDCBB449DE07FFC /* Pods_Beer_VIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beer_VIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DEA65F7C48D8665F9A29FF /* Pods-Beer VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beer VIPER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beer VIPER/Pods-Beer VIPER.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +167,7 @@
 				B9D0F6B620CF0C8700056489 /* FavoriteBeers */,
 				B9D0F6B120CF068100056489 /* BeerList */,
 				B9D0F56A20CEC44D00056489 /* AppDelegate.swift */,
+				B9E7A75520D5A94A00CEFEB5 /* Constants.swift */,
 				B9D0F57120CEC45000056489 /* Assets.xcassets */,
 				B9D0F57320CEC45000056489 /* LaunchScreen.storyboard */,
 				B9D0F57620CEC45000056489 /* Info.plist */,
@@ -247,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				B9D0F6D220CF614400056489 /* BeerModel.swift */,
+				B9E7A75720D5AB9A00CEFEB5 /* ErrorModel.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -622,11 +628,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E7A75820D5AB9A00CEFEB5 /* ErrorModel.swift in Sources */,
 				B911E40720CFD1D100D954DE /* BeerDetailProtocols.swift in Sources */,
 				B911E49D20D00D8500D954DE /* BeerDetailPresenter.swift in Sources */,
 				B9E7A74D20D3CBE200CEFEB5 /* EmptySearchView.swift in Sources */,
 				B9D0F6D320CF614400056489 /* BeerModel.swift in Sources */,
 				B9E7A75420D59BFE00CEFEB5 /* BeerTableViewCell.swift in Sources */,
+				B9E7A75620D5A94A00CEFEB5 /* Constants.swift in Sources */,
 				B911E40920CFD33200D954DE /* BeerDetailsRouter.swift in Sources */,
 				B9D0F56D20CEC44D00056489 /* BeerListTableViewController.swift in Sources */,
 				B9D0F6D520CF643800056489 /* BeerListRouter.swift in Sources */,

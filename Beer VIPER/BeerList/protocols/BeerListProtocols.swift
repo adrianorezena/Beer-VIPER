@@ -15,12 +15,12 @@ protocol BeerListPresenterToViewProtocol: class {
     
     func showBeers(beers: [BeerModel])
     //func showFilteredBeers(beers: [BeerModel])
-    func showError()
+    func showError(message: String)
 }
 
 protocol BeerListInteractorToPresenterProtocol: class {
     func beersFetched(beers: [BeerModel])
-    func beersFetchedFailed()
+    func beersFetchedFailed(message: String)
 }
 
 protocol BeerListPresenterToInteractorProtocol: class {
