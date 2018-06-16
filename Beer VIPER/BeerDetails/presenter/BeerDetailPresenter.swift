@@ -15,7 +15,7 @@ class BeerDetailPresenter: BeerDetailsViewToPresenterProtocol, BeerDetailsIntera
     var router: BeerDetailsPresenterToRouterProtocol?
     var delegate: BeerDetaileDelegate?
     
-    var beer: BeerListModel!
+    var beer: BeerModel!
     
     func updateView() {
         view?.showBeerDetails(beer: beer)

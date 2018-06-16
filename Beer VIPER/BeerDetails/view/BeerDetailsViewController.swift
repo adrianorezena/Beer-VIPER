@@ -28,7 +28,7 @@ class BeerDetailsViewController: UIViewController {
 
 extension BeerDetailsViewController: BeerDetailsPresenterToViewProtocol {
     
-    func showBeerDetails(beer: BeerListModel) {
+    func showBeerDetails(beer: BeerModel) {
         nameLabel.text = beer.name
         taglineLabel.text = beer.tagline
         descriptionLabel.text = beer.description

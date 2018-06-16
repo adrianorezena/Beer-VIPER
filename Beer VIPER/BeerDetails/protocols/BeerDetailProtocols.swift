@@ -23,12 +23,11 @@ protocol BeerDetailsInteractorToPresenterProtocol: class {
 
 protocol BeerDetailsPresenterToInteractorProtocol: class {
     var presenter: BeerDetailsInteractorToPresenterProtocol? {get set}
-//    func fetchBeers()
 }
 
 protocol BeerDetailsPresenterToViewProtocol: class {
     var presenter: BeerDetailsViewToPresenterProtocol? { get set }
-    func showBeerDetails(beer: BeerListModel)
+    func showBeerDetails(beer: BeerModel)
 }
 
 protocol BeerDetailsViewToPresenterProtocol: class {
@@ -45,5 +44,5 @@ protocol BeerDetailsViewToPresenterProtocol: class {
 
 
 protocol BeerDetailsPresenterToRouterProtocol: class {
-    static func createModule(with delegate: BeerDetaileDelegate, beer: BeerListModel) -> UIViewController
+    static func createModule(with delegate: BeerDetaileDelegate, beer: BeerModel) -> UIViewController
 }

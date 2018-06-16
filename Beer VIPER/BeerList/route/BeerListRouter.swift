@@ -36,7 +36,7 @@ class BeerListRouter: BeerListPresenterToRouterProtocol {
         return UIStoryboard(name: "BeerList", bundle: .main)
     }
     
-    func presentDetailsScreen(from view: BeerListPresenterToViewProtocol, beer: BeerListModel) {
+    func presentDetailsScreen(from view: BeerListPresenterToViewProtocol, beer: BeerModel) {
         guard let delegate = view.presenter as? BeerDetaileDelegate else {
             return
         }

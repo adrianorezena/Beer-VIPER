@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BeerListModel: Decodable {
+class BeerModel: Decodable {
     let id: Int
     let name: String
     let tagline: String

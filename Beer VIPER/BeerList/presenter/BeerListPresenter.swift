@@ -14,13 +14,29 @@ class BeerListPresenter: BeerListViewToPresenterProtocol {
     weak var view: BeerListPresenterToViewProtocol?
     var interactor: BeerListPresenterToInteractorProtocol?
     var router: BeerListPresenterToRouterProtocol?
+    //var beers: [BeerModel]!
+    //var beers: [BeerModel] = []
     
     func updateView() {
-        interactor?.fetchBeers()
+        interactor?.fetchBeers(nil)
     }
     
-    func showDetails(beer: BeerListModel) {
+    func showDetails(beer: BeerModel) {
         router?.presentDetailsScreen(from: view!, beer: beer)
+    }
+    
+    func loadNextPage(page: Int) {
+        interactor?.fetchBeers(page)
+    }
+    
+    func didTriggerSearchEvent(_ searchText: String, _ beers: [BeerModel]) {
+        var filteredBeers = beers
+        if (!searchText.isEmpty) {
+            filteredBeers = (interactor?.filterBeers(searchText, beers))!
+        }
+        
+        view?.showBeers(beers: filteredBeers)
+        //view.configureWithItems(items: buildItems(cities!))
     }
     
     func showFavorites(from view: BeerListPresenterToViewProtocol) {
@@ -31,7 +47,7 @@ class BeerListPresenter: BeerListViewToPresenterProtocol {
 
 extension BeerListPresenter: BeerListInteractorToPresenterProtocol {
     
-    func beersFetched(beers: [BeerListModel]) {
+    func beersFetched(beers: [BeerModel]) {
         view?.showBeers(beers: beers)
     }
     
