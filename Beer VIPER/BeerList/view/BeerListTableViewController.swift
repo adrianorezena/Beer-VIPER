@@ -7,14 +7,12 @@
 //
 
 import UIKit
-import Kingfisher
+import SDWebImage
 
 class BeerListTableViewController: UITableViewController {
 
-    
     //MARK: - IBOutlets
     @IBOutlet weak var searchBar: UISearchBar!
-    
     
     //MARK: - Properties
     private var searchController: UISearchController!
@@ -32,7 +30,6 @@ class BeerListTableViewController: UITableViewController {
         return label
     }()
     
-    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +38,11 @@ class BeerListTableViewController: UITableViewController {
         presenter?.updateView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        view.endEditing(true)
+    }
 
     func initUIElements() {
         tableView.register(UINib(nibName: "BeerTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
@@ -49,9 +51,7 @@ class BeerListTableViewController: UITableViewController {
         searchBar.showsScopeBar = true
     }
     
-    
-    //MARK: - TableView
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func getBeerFromIndexPath(_ indexPath: IndexPath) -> BeerModel {
         var beer: BeerModel!
         
         if isFiltering() {
@@ -60,6 +60,17 @@ class BeerListTableViewController: UITableViewController {
             beer = beers[indexPath.row]
         }
         
+        return beer
+    }
+    
+    //MARK: - Actions
+    @IBAction func onFavoritesBarButtonItem(_ sender: UIBarButtonItem) {
+        presenter?.showFavorites()
+    }
+    
+    //MARK: - TableView
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let beer = getBeerFromIndexPath(indexPath)
         presenter?.showDetails(beer: beer)
     }
 
@@ -92,7 +103,10 @@ class BeerListTableViewController: UITableViewController {
         }
         
         if let url = URL(string: beer.image_url) {
-            cell.imageView?.kf.setImage(with: url)
+            cell.imageView?.contentMode = .scaleAspectFit
+            cell.imageView?.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder"), options: .progressiveDownload, completed: { (image, error, type, url) in
+                cell.imageView?.setNeedsLayout()
+            })
         } else {
             cell.imageView?.image = UIImage(named: "placeholder")
         }
@@ -114,32 +128,17 @@ class BeerListTableViewController: UITableViewController {
         return UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
     }
     
-    
-    
-    
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        // Hide
+        let beer = getBeerFromIndexPath(indexPath)
+
         let action = UITableViewRowAction(style: .default, title: "Add to favorites") { (action, index) in
-            print("add favorite")
+            self.presenter?.addToFavorites(beer)
         }
         
         action.backgroundColor = .mainBlue
         
-//        // Delete
-//        let deleteNotification = UITableViewRowAction(style: .default, title: "Excluir notificação") { (action, index) in
-//            print("Excluir notificação")
-//        }
-//
-//        deleteNotification.backgroundColor = .red
-        
         return [action]
     }
-    
-    
-    
-    
-    
-    
     
     
     //MARK: - Search content
@@ -217,6 +216,7 @@ extension BeerListTableViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBarActive = false
         view.endEditing(true)
+        filteredBeers.removeAll()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

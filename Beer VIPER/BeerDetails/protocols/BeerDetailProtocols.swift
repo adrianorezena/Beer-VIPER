@@ -9,16 +9,10 @@
 import Foundation
 import UIKit
 
-protocol BeerDetaileDelegate: class {
-    //func didAddContact(_ contact: Contact)
-    //func didCancelAddContact()    
+protocol BeerDetailsDelegate: class {
 }
 
-
-
 protocol BeerDetailsInteractorToPresenterProtocol: class {
-//    func beersFetched(beers: [BeerListModel])
-//    func beersFetchedFailed()
 }
 
 protocol BeerDetailsPresenterToInteractorProtocol: class {
@@ -27,22 +21,19 @@ protocol BeerDetailsPresenterToInteractorProtocol: class {
 
 protocol BeerDetailsPresenterToViewProtocol: class {
     var presenter: BeerDetailsViewToPresenterProtocol? { get set }
-    func showBeerDetails(beer: BeerModel)
+    
+    func showBeerDetails(beerName: String, beerTagline: String, beerDescription: String, beerImageURL: String)
 }
 
 protocol BeerDetailsViewToPresenterProtocol: class {
     var view: BeerDetailsPresenterToViewProtocol? {get set}
     var interactor: BeerDetailsPresenterToInteractorProtocol? {get set}
     var router: BeerDetailsPresenterToRouterProtocol? {get set}
-    var delegate: BeerDetaileDelegate? { get set }
+    var delegate: BeerDetailsDelegate? { get set }
     
     func updateView()
 }
 
-
-
-
-
 protocol BeerDetailsPresenterToRouterProtocol: class {
-    static func createModule(with delegate: BeerDetaileDelegate, beer: BeerModel) -> UIViewController
+    static func createModule(with delegate: BeerDetailsDelegate, beerName: String, beerTagline: String, beerDescription: String, beerImageURL: String) -> UIViewController
 }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Kingfisher
+import SDWebImage
 
 class BeerDetailsViewController: UIViewController {
     
@@ -28,13 +28,17 @@ class BeerDetailsViewController: UIViewController {
 
 extension BeerDetailsViewController: BeerDetailsPresenterToViewProtocol {
     
-    func showBeerDetails(beer: BeerModel) {
-        nameLabel.text = beer.name
-        taglineLabel.text = beer.tagline
-        descriptionLabel.text = beer.description
+    func showBeerDetails(beerName: String, beerTagline: String, beerDescription: String, beerImageURL: String) {
+        nameLabel.text = beerName
+        taglineLabel.text = beerTagline
+        descriptionLabel.text = beerDescription
         
-        if let url = URL(string: beer.image_url) {
-            imageView?.kf.setImage(with: url)
+        if let url = URL(string: beerImageURL) {
+            imageView?.contentMode = .scaleAspectFit
+            imageView?.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder"), options: .progressiveDownload, completed: { (image, error, type, url) in
+                self.imageView?.setNeedsLayout()
+            })
+            
         } else {
             imageView?.image = UIImage(named: "placeholder")
         }

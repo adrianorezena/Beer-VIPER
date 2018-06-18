@@ -14,7 +14,6 @@ protocol BeerListPresenterToViewProtocol: class {
     var presenter: BeerListViewToPresenterProtocol? { get set }
     
     func showBeers(beers: [BeerModel])
-    //func showFilteredBeers(beers: [BeerModel])
     func showError(message: String)
 }
 
@@ -27,6 +26,7 @@ protocol BeerListPresenterToInteractorProtocol: class {
     var presenter: BeerListInteractorToPresenterProtocol? {get set}
     func fetchBeers(_ page: Int?)
     func filterBeers(_ searchString: String, _ beers: [BeerModel]) -> [BeerModel]
+    func addToFavorites(_ beer: BeerModel)
 }
 
 protocol BeerListViewToPresenterProtocol: class {
@@ -34,10 +34,11 @@ protocol BeerListViewToPresenterProtocol: class {
     var interactor: BeerListPresenterToInteractorProtocol? {get set};
     var router: BeerListPresenterToRouterProtocol? {get set}
     func updateView()
-    /// Load next beers page
     func loadNextPage(page: Int)
     func showDetails(beer: BeerModel)
     func didTriggerSearchEvent(_ searchText: String, _ beers: [BeerModel])
+    func addToFavorites(_ beer: BeerModel)
+    func showFavorites()
 }
 
 protocol BeerListPresenterToRouterProtocol: class {

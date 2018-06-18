@@ -6,7 +6,8 @@ target 'Beer VIPER' do
   use_frameworks!
 
   # Pods for Beer VIPER
-  pod 'Kingfisher', '~> 4.0'
+  pod 'RealmSwift'
+  pod 'SDWebImage', '~> 4.0'
 
   target 'Beer VIPERTests' do
     inherit! :search_paths

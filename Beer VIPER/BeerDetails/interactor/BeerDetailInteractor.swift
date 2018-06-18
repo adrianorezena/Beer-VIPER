@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BeerDetailInteractor: BeerDetailsPresenterToInteractorProtocol {
+class BeerDetailInteractor: BeerDetailsPresenterToInteractorProtocol {    
     var presenter: BeerDetailsInteractorToPresenterProtocol?
-    
+        
 }

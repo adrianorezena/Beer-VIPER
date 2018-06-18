@@ -37,19 +37,25 @@ class BeerListRouter: BeerListPresenterToRouterProtocol {
     }
     
     func presentDetailsScreen(from view: BeerListPresenterToViewProtocol, beer: BeerModel) {
-        guard let delegate = view.presenter as? BeerDetaileDelegate else {
+        guard let delegate = view.presenter as? BeerDetailsDelegate else {
             return
         }
         
-        let detailsScreen = BeerDetailsRouter.createModule(with: delegate, beer: beer)
+        let detailsScreen = BeerDetailsRouter.createModule(with: delegate, beerName: beer.name, beerTagline: beer.tagline, beerDescription: beer.description, beerImageURL: beer.image_url)        
         if let sourceView = view as? UIViewController {
             sourceView.navigationController?.pushViewController(detailsScreen, animated: true)
         }
-        
     }
     
     func presentFavoritesScreen(from view: BeerListPresenterToViewProtocol) {
-        //TODO: Implementar
+        guard let delegate = view.presenter as? FavoriteBeersDelegate else {
+            return
+        }
+        
+        let favoritesScreen = FavoriteBeersRouter.createModule(with: delegate)
+        if let sourceView = view as? UIViewController {
+            sourceView.navigationController?.pushViewController(favoritesScreen, animated: true)
+        }
     }
     
 }

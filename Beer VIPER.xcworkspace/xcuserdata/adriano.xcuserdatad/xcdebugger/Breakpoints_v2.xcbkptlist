@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beer VIPER/BeerList/route/BeerListRouter.swift"
-            timestampString = "550752239.063604"
+            timestampString = "550963951.836678"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -25,24 +25,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Beer VIPER/BeerDetails/route/BeerDetailsRouter.swift"
-            timestampString = "550752239.063679"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "createModule(with:beer:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Beer VIPER/BeerDetails/view/BeerDetailsViewController.swift"
-            timestampString = "550752239.063738"
+            timestampString = "550980043.488807"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -58,55 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beer VIPER/BeerDetails/view/BeerDetailsViewController.swift"
-            timestampString = "550752239.063799"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "showBeerDetails(beer:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Beer VIPER/BeerDetails/route/BeerDetailsRouter.swift"
-            timestampString = "550752239.063853"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "createModule(with:beer:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Beer VIPER/BeerDetails/route/BeerDetailsRouter.swift"
-            timestampString = "550752239.063905"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "createModule(with:beer:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Beer VIPER/BeerDetails/view/BeerDetailsViewController.swift"
-            timestampString = "550752239.063957"
+            timestampString = "550980043.488924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -122,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beer VIPER/BeerList/interactor/BeerListInteractor.swift"
-            timestampString = "550878866.22934"
+            timestampString = "550963951.837198"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "fetchBeers(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +74,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beer VIPER/BeerList/view/BeerListTableViewController.swift"
-            timestampString = "550878866.229423"
+            timestampString = "550980118.8515199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/BeerList/view/BeerListTableViewController.swift"
+            timestampString = "550980118.852088"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,43 +106,138 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beer VIPER/BeerList/interactor/BeerListInteractor.swift"
-            timestampString = "550878866.229835"
+            timestampString = "550963951.8395621"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "fetchBeers(_:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "addToFavorites(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/FavoriteBeers/view/FavoriteBeersTableViewController.swift"
+            timestampString = "550980043.490182"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/FavoriteBeers/view/FavoriteBeersTableViewController.swift"
+            timestampString = "550980043.49025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/BeerList/view/BeerListTableViewController.swift"
+            timestampString = "550980118.852538"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "onFavoritesBarButtonItem(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/BeerList/route/BeerListRouter.swift"
+            timestampString = "550963951.8406039"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "presentFavoritesScreen(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/FavoriteBeers/presenter/FavoriteBeersPresenter.swift"
+            timestampString = "550980043.4906631"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "FavoriteBeersPresenter"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Beer_VIPER.BeerListInteractor.fetchBeers(Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
+                  symbolName = "Beer_VIPER.FavoriteBeersPresenter.favoriteBeers.getter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;Beer_VIPER.FavoriteBeer&gt;&gt;"
                   moduleName = "Beer VIPER"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adriano/Documents/app/outro/Beer%20VIPER/Beer%20VIPER/BeerList/interactor/BeerListInteractor.swift"
-                  timestampString = "550873731.217167"
+                  urlString = "file:///Users/adriano/Documents/app/outro/Beer%20VIPER/Beer%20VIPER/FavoriteBeers/presenter/FavoriteBeersPresenter.swift"
+                  timestampString = "550936634.589175"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "616">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "80">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Beer_VIPER.BeerListInteractor.fetchBeers(Swift.Optional&lt;Swift.Int&gt;) -&gt; ()"
+                  symbolName = "Beer_VIPER.FavoriteBeersPresenter.favoriteBeers.setter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;Beer_VIPER.FavoriteBeer&gt;&gt;"
                   moduleName = "Beer VIPER"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adriano/Documents/app/outro/Beer%20VIPER/Beer%20VIPER/BeerList/interactor/BeerListInteractor.swift"
-                  timestampString = "550873731.221151"
+                  urlString = "file:///Users/adriano/Documents/app/outro/Beer%20VIPER/Beer%20VIPER/FavoriteBeers/presenter/FavoriteBeersPresenter.swift"
+                  timestampString = "550936634.5913171"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "46">
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beer_VIPER.FavoriteBeersPresenter.init() -&gt; Beer_VIPER.FavoriteBeersPresenter"
+                  moduleName = "Beer VIPER"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adriano/Documents/app/outro/Beer%20VIPER/Beer%20VIPER/FavoriteBeers/presenter/FavoriteBeersPresenter.swift"
+                  timestampString = "550936634.594147"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "567">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -201,29 +248,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Beer VIPER/BeerList/interactor/BeerListInteractor.swift"
-            timestampString = "550878866.229913"
+            filePath = "Beer VIPER/FavoriteBeers/interactor/FavoriteBeersInteractor.swift"
+            timestampString = "550980043.490739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "fetchBeers(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Beer VIPER/BeerList/interactor/BeerListInteractor.swift"
-            timestampString = "550878866.2299891"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "fetchBeers(_:)"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fetchFavoriteBeers()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -233,13 +264,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Beer VIPER/BeerList/view/BeerListTableViewController.swift"
-            timestampString = "550878866.230064"
+            filePath = "Beer VIPER/FavoriteBeers/view/FavoriteBeersTableViewController.swift"
+            timestampString = "550980043.490796"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -249,13 +280,109 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Beer VIPER/BeerList/view/BeerListTableViewController.swift"
-            timestampString = "550878866.230413"
+            filePath = "Beer VIPER/FavoriteBeers/interactor/FavoriteBeersInteractor.swift"
+            timestampString = "550980043.490852"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "fetchFavoriteBeers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/Persistency/PersistencyManager.swift"
+            timestampString = "550963951.84146"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getFavorites()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/FavoriteBeers/view/FavoriteBeersTableViewController.swift"
+            timestampString = "550980043.490942"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "tableView(_:editActionsForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/FavoriteBeers/view/FavoriteBeersTableViewController.swift"
+            timestampString = "550980043.490995"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/FavoriteBeers/presenter/FavoriteBeersPresenter.swift"
+            timestampString = "550980043.491068"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "showDetails(favoriteBeer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/FavoriteBeers/route/FavoriteBeersRouter.swift"
+            timestampString = "550963951.842006"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "presentDetailsScreen(from:favoriteBeer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beer VIPER/FavoriteBeers/route/FavoriteBeersRouter.swift"
+            timestampString = "550963951.842618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "presentDetailsScreen(from:favoriteBeer:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

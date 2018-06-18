@@ -13,12 +13,16 @@ class BeerDetailPresenter: BeerDetailsViewToPresenterProtocol, BeerDetailsIntera
     var view: BeerDetailsPresenterToViewProtocol?
     var interactor: BeerDetailsPresenterToInteractorProtocol?
     var router: BeerDetailsPresenterToRouterProtocol?
-    var delegate: BeerDetaileDelegate?
-    
-    var beer: BeerModel!
+    var delegate: BeerDetailsDelegate?
+        
+    var beerID: Int!
+    var beerName: String!
+    var beerTagline: String!
+    var beerDescription: String!
+    var beerImageURL: String!
     
     func updateView() {
-        view?.showBeerDetails(beer: beer)
+        view?.showBeerDetails(beerName: beerName, beerTagline: beerTagline, beerDescription: beerDescription, beerImageURL: beerImageURL)
     }
 
 }

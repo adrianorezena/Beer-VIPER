@@ -36,12 +36,18 @@ class BeerListPresenter: BeerListViewToPresenterProtocol {
         view?.showBeers(beers: filteredBeers)
     }
     
-    func showFavorites(from view: BeerListPresenterToViewProtocol) {
-        router?.presentFavoritesScreen(from: view)
+    func addToFavorites(_ beer: BeerModel) {
+        interactor?.addToFavorites(beer)
+    }
+    
+    func showFavorites() {
+        router?.presentFavoritesScreen(from: view!)
     }
     
 }
 
+
+//MARK: - BeerListInteractorToPresenterProtocol
 extension BeerListPresenter: BeerListInteractorToPresenterProtocol {
     
     func beersFetched(beers: [BeerModel]) {
@@ -55,6 +61,13 @@ extension BeerListPresenter: BeerListInteractorToPresenterProtocol {
 }
 
 
-extension BeerListPresenter: BeerDetaileDelegate {
+//MARK: - BeerDetailsDelegate
+extension BeerListPresenter: BeerDetailsDelegate {
+    
+}
+
+
+//MARK: - FavoriteBeersDelegate
+extension BeerListPresenter: FavoriteBeersDelegate {
     
 }

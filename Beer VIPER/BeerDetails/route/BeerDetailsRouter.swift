@@ -11,9 +11,8 @@ import UIKit
 
 class BeerDetailsRouter: BeerDetailsPresenterToRouterProtocol {
     
-    static func createModule(with delegate: BeerDetaileDelegate, beer: BeerModel) -> UIViewController {
-        let view = mainStoryboard.instantiateViewController(withIdentifier: "BeerDetailsViewController") as? BeerDetailsPresenterToViewProtocol
-        //let presenter: BeerDetailsViewToPresenterProtocol & BeerDetailsInteractorToPresenterProtocol = BeerDetailPresenter()
+    static func createModule(with delegate: BeerDetailsDelegate, beerName: String, beerTagline: String, beerDescription: String, beerImageURL: String) -> UIViewController {
+        let view = mainStoryboard.instantiateViewController(withIdentifier: "BeerDetailsViewController") as? BeerDetailsPresenterToViewProtocol        
         let presenter = BeerDetailPresenter()
         let interactor: BeerDetailsPresenterToInteractorProtocol = BeerDetailInteractor()
         let router: BeerDetailsPresenterToRouterProtocol = BeerDetailsRouter()
@@ -24,7 +23,12 @@ class BeerDetailsRouter: BeerDetailsPresenterToRouterProtocol {
         presenter.router = router
         presenter.interactor = interactor
         presenter.delegate = delegate
-        presenter.beer = beer
+        
+        presenter.beerName = beerName
+        presenter.beerTagline = beerTagline
+        presenter.beerDescription = beerDescription
+        presenter.beerImageURL = beerImageURL
+        
         interactor.presenter = presenter
         
         return view as! BeerDetailsViewController
